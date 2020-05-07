@@ -20,7 +20,7 @@ float pen_size = 10;
 
 void setup()
 {
-  size(600,600);
+  size(1000,700);
   color_background();
 
   
@@ -42,6 +42,8 @@ void setup()
   cp5.addColorWheel("c" , 5 , 5 , 200 )
      .setRGB(color(128,0,255))
      ;
+  
+  
      
     
   
@@ -227,5 +229,7 @@ public void pensize(float psize)
 {
   if(!ft)
     pen_size = psize;
+  if(ft)c = color(128,0,255);
   ft = false;
+  
 }
